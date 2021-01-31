@@ -1,4 +1,4 @@
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./components/about_me/AboutMe";
 import "./styles/App.css";
 
 function App() {
