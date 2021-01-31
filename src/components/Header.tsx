@@ -1,3 +1,6 @@
+import "../styles/header.css";
+import downloadIcon from "../images/download_icon.svg";
+
 function Header() {
   return (
     <div className="header">
@@ -8,6 +11,7 @@ function Header() {
         <p>Projects</p>
       </div>
       <div className="header__right">
+        <img src={downloadIcon} alt="Download Icon" />
         <p>Resume</p>
       </div>
     </div>
