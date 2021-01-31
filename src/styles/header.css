@@ -1,0 +1,30 @@
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+/* Left Header */
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left > p {
+  margin-right: 44px;
+}
+
+/* Right Header */
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right p {
+  font-weight: bold;
+}
+
+.header__right img {
+  margin-right: 4px;
+}

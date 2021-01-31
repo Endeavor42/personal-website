@@ -1,7 +1,12 @@
-import "./App.css";
+import AboutMe from "./components/AboutMe";
+import "./styles/App.css";
 
 function App() {
-  return <h1>Hello Personal Website</h1>;
+  return (
+    <div className="app">
+      <AboutMe />
+    </div>
+  );
 }
 
 export default App;
