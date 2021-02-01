@@ -1,5 +1,5 @@
-import "../styles/header.css";
-import downloadIcon from "../images/download_icon.svg";
+import "../../styles/header.css";
+import downloadIcon from "../../images/download_icon.svg";
 
 function Header() {
   return (
