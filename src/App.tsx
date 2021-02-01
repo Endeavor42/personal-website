@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="app">
       <AboutMe />
+      <div style={{ height: 500, width: "100%" }}></div>
     </div>
   );
 }

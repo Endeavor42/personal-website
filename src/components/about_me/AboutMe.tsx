@@ -5,10 +5,8 @@ import Info from "./Info";
 function AboutMe() {
   return (
     <div className="aboutMe">
-      <div className="container">
-        <Header />
-        <Info />
-      </div>
+      <Header />
+      <Info />
     </div>
   );
 }
