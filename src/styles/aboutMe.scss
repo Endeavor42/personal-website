@@ -1,6 +1,6 @@
 .aboutMe {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #fbfbfb;
   &__navbar {
     display: block;
@@ -28,12 +28,11 @@
       background-color: #6a3af1;
       border-radius: 11px;
       font-size: 12px;
-      padding: 5px 9px;
+      padding: 4px 9px;
       img {
         width: 12px;
         height: 12px;
         margin-right: 4px;
-        margin-top: 1px;
       }
     }
   }
@@ -41,8 +40,8 @@
     position: absolute;
     left: 12px;
     top: 50px;
-    width: 170px;
-    height: 180px;
+    width: 10.63rem;
+    height: 11.25rem;
   }
   &__rightImg {
     position: absolute;
@@ -68,5 +67,62 @@
       width: 100%;
       height: 75px;
     }
+  }
+  &__textWrapper {
+    width: 90%;
+    position: absolute;
+    left: 21px;
+    top: 285px;
+    .titleWrapper {
+      margin: auto;
+      width: 334px;
+      height: 97.16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      p {
+        font-size: 18px;
+      }
+      hr {
+        height: 5px;
+        width: 111px;
+        background-color: #5f2eea;
+      }
+    }
+    .description {
+      width: 82%;
+      margin: auto;
+      p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 200%;
+      }
+    }
+  }
+  &__bottomImgWrapper {
+    top: 615px;
+  }
+  &__globeIcon {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 660px;
+    left: 157px;
+  }
+  &__minion--front {
+    position: absolute;
+    width: 66px;
+    height: 72px;
+    left: 27px;
+    top: 715px;
+  }
+  &__minion--back {
+    position: absolute;
+    width: 54.5px;
+    height: 71px;
+    right: 27px;
+    top: 715px;
   }
 }
