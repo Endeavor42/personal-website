@@ -1,11 +1,9 @@
 import "../styles/aboutMe.scss";
 import phonesImg from "../images/about_me/phones.svg";
-import computerImg from "../images/about_me/computer.svg";
-import blob1Img from "../images/about_me/blob1.svg";
-import blob2Img from "../images/about_me/blob2.svg";
 import globeImg from "../images/about_me/globe.svg";
 import minionFrontImg from "../images/about_me/minion_front.svg";
 import minionBackImg from "../images/about_me/minion_back.svg";
+import blobsImg from "../images/about_me/blobsGroup.svg";
 
 function AboutMe() {
   return (
@@ -13,13 +11,7 @@ function AboutMe() {
       <div className="aboutMe__topImgContainer">
         <img className="phonesImg" src={phonesImg} alt="Phones" />
         <div className="rightImg">
-          <div className="blob1">
-            <img src={blob1Img} alt="blob" />
-          </div>
-          <img className="computerImg" src={computerImg} alt="Computer" />
-          <div className="blob2">
-            <img src={blob2Img} alt="blob" />
-          </div>
+          <img src={blobsImg} alt="computer and blobs" />
         </div>
       </div>
       <div className="aboutMe__textWrapper">

@@ -3,53 +3,32 @@
 .aboutMe {
   width: 100%;
   height: calc(100% - 36px);
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fbfbfb;
   &__topImgContainer {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    max-width: rem(600);
-    height: auto;
+    min-width: 300px;
+    max-width: 450px;
+    height: rem(264);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     .phonesImg {
-      width: rem(170);
-      height: rem(180);
-      margin: 1rem;
+      grid-column: 1/7;
+      padding: rem(12);
+      img {
+        width: 150%;
+        height: auto;
+      }
     }
     .rightImg {
-      width: rem(189);
-      height: rem(216);
-      transform: translateY(-20px);
-      .blob1 {
-        width: rem(70);
-        height: rem(70);
-        margin-left: auto;
-        margin-right: 4rem;
-        img {
-          position: relative;
-          top: -17px;
-          left: -100px;
-          width: 100%;
-          height: auto;
-        }
-      }
-      .computerImg {
-        width: rem(260);
-        height: rem(160);
-      }
-      .blob2 {
-        // margin-left: auto;
-        height: rem(85);
-        width: rem(92);
-        img {
-          position: relative;
-          right: -160px;
-          top: -25px;
-          height: rem(80);
-          width: rem(90);
-        }
+      grid-column: 8/13;
+      transform: translateY(-23px);
+      img {
+        width: 125%;
+        height: auto;
       }
     }
   }
@@ -100,8 +79,10 @@
     justify-content: space-between;
   }
   .minion--front {
-    width: rem(65);
-    height: rem(72);
+    max-width: 100%;
+    height: auto;
+    // max-width: rem(80);
+    // max-height: rem(87);
   }
   .minion--back {
     width: rem(54);
