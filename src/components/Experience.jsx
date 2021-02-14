@@ -3,6 +3,9 @@ import "../styles/experience.scss";
 function Experience() {
   return (
     <div className="experience">
+      <div className="experience__tabWrapper">
+        <p>Experience</p>
+      </div>
       <div className="experience__container">
         <div className="experience__jobTitleWrapper--first">
           <div className="companyAndTimeline">

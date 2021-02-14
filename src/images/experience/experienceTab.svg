@@ -1,5 +1,25 @@
 <svg width="165" height="49" viewBox="0 0 165 49" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0.135742H159.794C162.669 0.135742 165 2.46669 165 5.34205V43.7887C165 46.664 162.669 48.995 159.794 48.995H0V0.135742Z" fill="url(#paint0_linear)"/>
+<path opacity="0.2" d="M20.0248 37.7817H14.418V42.1871H20.0248V37.7817Z" fill="#8563CD" fill-opacity="0.65"/>
+<path opacity="0.2" d="M6.40777 17.7573H0V23.3641H6.40777V17.7573Z" fill="#C2A5FF" fill-opacity="0.78"/>
+<path opacity="0.2" d="M12.814 26.5679H6.40625V32.1747H12.814V26.5679Z" fill="#C1A4FF" fill-opacity="0.47"/>
+<path opacity="0.2" d="M25.2281 30.1724H18.8203V35.7792H25.2281V30.1724Z" fill="#C1A4FF" fill-opacity="0.47"/>
+<path opacity="0.2" d="M12.814 32.1748H6.40625V37.7816H12.814V32.1748Z" fill="#C1A4FF" fill-opacity="0.47"/>
+<path opacity="0.2" d="M6.40777 0.135742H0V5.34205H6.40777V0.135742Z" fill="#C1A4FF" fill-opacity="0.47"/>
+<path opacity="0.2" d="M23.2281 8.146H16.8203V14.5538H23.2281V8.146Z" fill="#C1A4FF" fill-opacity="0.47"/>
+<path opacity="0.2" d="M12.814 15.7549H6.40625V21.7622H12.814V15.7549Z" fill="#C1A4FF" fill-opacity="0.47"/>
+<path opacity="0.2" d="M31.2359 14.5532H24.8281V20.5605H31.2359V14.5532Z" fill="#C1A4FF" fill-opacity="0.37"/>
+<path opacity="0.2" d="M12.814 10.1479H6.40625V16.1552H12.814V10.1479Z" fill="#6022E3"/>
+<path opacity="0.2" d="M6.40777 5.34229H0V11.3496H6.40777V5.34229Z" fill="white" fill-opacity="0.39"/>
+<path opacity="0.2" d="M6.40777 23.3643H0V29.772H6.40777V23.3643Z" fill="#451B9C" fill-opacity="0.26"/>
+<path opacity="0.2" d="M12.814 4.5415H6.40625V10.9493H12.814V4.5415Z" fill="#451B9C"/>
+<path opacity="0.2" d="M12.814 37.7817H6.40625V44.1895H12.814V37.7817Z" fill="#A591CE" fill-opacity="0.49"/>
+<path opacity="0.2" d="M6.40777 29.7715H0V36.1793H6.40777V29.7715Z" fill="white" fill-opacity="0.39"/>
+<path opacity="0.2" d="M37.6421 28.9707H31.2344V35.3785H37.6421V28.9707Z" fill="white" fill-opacity="0.17"/>
+<path opacity="0.2" d="M6.40777 11.3496H0V17.7574H6.40777V11.3496Z" fill="#998EB0"/>
+<path opacity="0.2" d="M6.40777 36.1797H0V42.5875H6.40777V36.1797Z" fill="#5221B9" fill-opacity="0.9"/>
+<path opacity="0.2" d="M20.025 20.1602H13.6172V26.5679H20.025V20.1602Z" fill="#886DC1"/>
+<path opacity="0.2" d="M6.40777 42.5869H0V48.9947H6.40777V42.5869Z" fill="#C0D2FF" fill-opacity="0.81"/>
 <defs>
 <linearGradient id="paint0_linear" x1="-4.42649e-09" y1="26.1586" x2="285.946" y2="24.5191" gradientUnits="userSpaceOnUse">
 <stop stop-color="#300C5E"/>

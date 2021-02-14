@@ -1,11 +1,26 @@
 @import "./_global.scss";
 
 .experience {
-  height: rem(780);
+  height: rem(1880); // remove this later
+  &__tabWrapper {
+    height: rem(48.86);
+    width: rem(166);
+    margin: rem(22) 0px rem(31);
+    background-image: url("../images/experience/experienceTab.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: white;
+      font-size: rem(19);
+    }
+  }
   &__container {
     width: 80%;
     margin: auto;
   }
+
   h3 {
     font-size: rem(20);
     margin-right: rem(10);
@@ -29,7 +44,7 @@
   &__jobTitleWrapper--second {
     margin-top: rem(20);
     .companyAndTimeline {
-      margin-bottom: rem(10);
+      margin-bottom: rem(5);
     }
     .jobPosition {
       padding-right: rem(20);
