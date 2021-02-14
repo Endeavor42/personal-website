@@ -1,31 +1,26 @@
 import "../styles/aboutMe.scss";
-import hamburgerIcon from "../images/about_me/hamburger.svg";
-import phonesIcon from "../images/about_me/phones.svg";
-import downloadIcon from "../images/about_me/download.svg";
-import computerIcon from "../images/about_me/computer.svg";
-import blob1Icon from "../images/about_me/blob1.svg";
-import blob2Icon from "../images/about_me/blob2.svg";
-import globeIcon from "../images/about_me/globe.svg";
-import minionFrontIcon from "../images/about_me/minion_front.svg";
-import minionBackIcon from "../images/about_me/minion_back.svg";
+import phonesImg from "../images/about_me/phones.svg";
+import computerImg from "../images/about_me/computer.svg";
+import blob1Img from "../images/about_me/blob1.svg";
+import blob2Img from "../images/about_me/blob2.svg";
+import globeImg from "../images/about_me/globe.svg";
+import minionFrontImg from "../images/about_me/minion_front.svg";
+import minionBackImg from "../images/about_me/minion_back.svg";
 
 function AboutMe() {
   return (
     <div className="aboutMe">
-      <div className="aboutMe__navbar">
-        <div className="aboutMe__container">
-          <img src={hamburgerIcon} alt="Hamburger Icon" />
-          <a href="../Fitri_Rozi_Resume.pdf" download>
-            <img src={downloadIcon} alt="Download resume" />
-            <span>Resume</span>
-          </a>
+      <div className="aboutMe__topImgContainer">
+        <img className="phonesImg" src={phonesImg} alt="Phones" />
+        <div className="rightImg">
+          <div className="blob1">
+            <img src={blob1Img} alt="blob" />
+          </div>
+          <img className="computerImg" src={computerImg} alt="Computer" />
+          <div className="blob2">
+            <img src={blob2Img} alt="blob" />
+          </div>
         </div>
-      </div>
-      <img className="aboutMe__phonesIcon" src={phonesIcon} alt="Phones" />
-      <div className="aboutMe__rightImg">
-        <img className="blob1" src={blob1Icon} alt="blob" />
-        <img className="computerIcon" src={computerIcon} alt="Computer" />
-        <img className="blob2" src={blob2Icon} alt="blob" />
       </div>
       <div className="aboutMe__textWrapper">
         <div className="titleWrapper">
@@ -41,18 +36,12 @@ function AboutMe() {
           </p>
         </div>
       </div>
+      <img className="aboutMe__globeImg" src={globeImg} alt="globe" />
       <div className="aboutMe__bottomImgWrapper">
-        <img className="aboutMe__globeIcon" src={globeIcon} alt="globe" />
-        <img
-          className="aboutMe__minion--front"
-          src={minionFrontIcon}
-          alt="minion"
-        />
-        <img
-          className="aboutMe__minion--back"
-          src={minionBackIcon}
-          alt="minion"
-        />
+        <div className="aboutMe__minionsContainer">
+          <img className="minion--front" src={minionFrontImg} alt="minion" />
+          <img className="minion--back" src={minionBackImg} alt="minion" />
+        </div>
       </div>
     </div>
   );

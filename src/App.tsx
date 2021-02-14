@@ -1,9 +1,11 @@
 import AboutMe from "./components/AboutMe";
-import "./styles/App.css";
+import Navbar from "./components/Navbar";
+import "./styles/App.scss";
 
 function App() {
   return (
     <div className="app">
+      <Navbar />
       <AboutMe />
     </div>
   );
