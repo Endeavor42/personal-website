@@ -1,4 +1,8 @@
 import "../styles/experience.scss";
+import Card from "@material-ui/core/Card";
+import { CardActions, CardMedia } from "@material-ui/core";
+import mobileMockupImg from "../images/experience/mobileMockup.svg";
+import websiteMockupImg from "../images/experience/websiteMockup.svg";
 
 function Experience() {
   return (
@@ -68,6 +72,28 @@ function Experience() {
             Responsible for designing both mobile app and website using Adobe XD
           </li>
         </ul>
+        <div className="experience__cards">
+          <Card className="card">
+            <CardMedia className="imgCover">
+              <img src={mobileMockupImg} alt="Mobile Mockup" />
+            </CardMedia>
+            <CardActions className="cardFooter">
+              <p>Mobile Mockup</p>
+            </CardActions>
+          </Card>
+          <Card className="card">
+            <CardMedia className="imgCover">
+              <img
+                className="second"
+                src={websiteMockupImg}
+                alt="Website Mockup"
+              />
+            </CardMedia>
+            <CardActions className="cardFooter">
+              <p>Website Mockup</p>
+            </CardActions>
+          </Card>
+        </div>
       </div>
     </div>
   );

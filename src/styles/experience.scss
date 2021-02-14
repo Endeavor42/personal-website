@@ -1,7 +1,7 @@
 @import "./_global.scss";
 
 .experience {
-  height: rem(1880); // remove this later
+  // height: rem(1880); // remove this later
   &__tabWrapper {
     height: rem(48.86);
     width: rem(166);
@@ -43,9 +43,6 @@
   }
   &__jobTitleWrapper--second {
     margin-top: rem(20);
-    .companyAndTimeline {
-      margin-bottom: rem(5);
-    }
     .jobPosition {
       padding-right: rem(20);
     }
@@ -61,6 +58,43 @@
       &::marker {
         color: #284fc6;
       }
+    }
+  }
+  &__cards {
+    margin: rem(30) 0px;
+    .card {
+      margin: auto;
+      cursor: pointer;
+      width: rem(260);
+      height: rem(195);
+      .imgCover {
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: rem(150);
+        overflow: hidden;
+        img {
+          width: rem(94);
+          height: rem(181);
+        }
+        .second {
+          width: rem(274);
+          height: rem(136);
+        }
+      }
+      .cardFooter {
+        background-color: #3d94e4;
+        font-size: 1.25rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .card:nth-child(2) {
+      margin-top: rem(30);
     }
   }
 }
