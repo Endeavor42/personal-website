@@ -4,7 +4,7 @@ function Experience() {
   return (
     <div className="experience">
       <div className="experience__container">
-        <div className="experience__jobTitleWrapper">
+        <div className="experience__jobTitleWrapper--first">
           <div className="companyAndTimeline">
             <h3>NetApp</h3>
             <p className="timeline">September 2020 - Present</p>
@@ -36,7 +36,7 @@ function Experience() {
             management and collaboration tools
           </li>
         </ul>
-        <div className="experience__jobTitleWrapper">
+        <div className="experience__jobTitleWrapper--second">
           <div className="companyAndTimeline">
             <h3>Sensor Dynamix</h3>
             <p className="timeline">May 2020 - August 2020</p>

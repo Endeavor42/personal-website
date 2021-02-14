@@ -3,31 +3,40 @@
 .experience {
   height: rem(780);
   &__container {
-    width: 85%;
+    width: 80%;
     margin: auto;
   }
-  &__jobTitleWrapper {
+  h3 {
+    font-size: rem(20);
+    margin-right: rem(10);
+  }
+  .timeline {
+    font-size: rem(12);
+    color: #606060;
+  }
+  .jobPosition {
+    font-size: rem(14);
+    font-style: italic;
+    line-height: rem(20);
+  }
+  &__jobTitleWrapper--first {
     .companyAndTimeline {
       display: flex;
       align-items: center;
       margin-bottom: rem(5);
-      h3 {
-        font-size: rem(20);
-        margin-right: rem(10);
-      }
-      .timeline {
-        font-size: rem(12);
-        color: #606060;
-      }
+    }
+  }
+  &__jobTitleWrapper--second {
+    margin-top: rem(20);
+    .companyAndTimeline {
+      margin-bottom: rem(10);
     }
     .jobPosition {
-      font-size: rem(14);
-      font-style: italic;
-      line-height: rem(20);
+      padding-right: rem(20);
     }
   }
   ul {
-    padding-left: 20px;
+    padding-left: 12px;
     li {
       padding-top: 18px;
       padding-right: 10px;
