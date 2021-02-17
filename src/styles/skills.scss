@@ -1,0 +1,69 @@
+@import "./_global.scss";
+
+.skills {
+  height: rem(1880); // remove this later
+  &__tabWrapper {
+    height: rem(48.86);
+    width: rem(166);
+    margin: rem(22) 0px rem(31);
+    background-image: url("../images/skills/skillsTab.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: white;
+      font-size: rem(23);
+    }
+  }
+  &__cards {
+    margin: rem(30) 0px rem(50);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 25px;
+    .card {
+      grid-column: 1/13;
+      margin: auto;
+      width: rem(335);
+      height: rem(398);
+      .imgCover {
+        height: rem(120);
+        img {
+          width: 100%;
+        }
+        .second {
+          width: rem(274);
+          height: rem(136);
+        }
+      }
+      .cardContent {
+        height: calc(100% - 120px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .techRow {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .techRow:first-child {
+          margin-top: rem(5);
+          align-self: center;
+        }
+        .techRow:nth-child(2) {
+          width: 95%;
+          justify-content: space-between;
+          align-self: center;
+        }
+        .techItem {
+          text-align: center;
+          p {
+            font-size: rem(12);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

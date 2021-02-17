@@ -1,7 +1,6 @@
 @import "./_global.scss";
 
 .experience {
-  // height: rem(1880); // remove this later
   &__tabWrapper {
     height: rem(48.86);
     width: rem(166);
@@ -13,7 +12,7 @@
     align-items: center;
     p {
       color: white;
-      font-size: rem(19);
+      font-size: rem(21);
     }
   }
   &__container {
@@ -61,7 +60,7 @@
     }
   }
   &__cards {
-    margin: rem(30) 0px;
+    margin: rem(30) 0px rem(50);
     .card {
       margin: auto;
       cursor: pointer;
