@@ -2,19 +2,76 @@
 
 .projects {
   height: rem(790);
+  width: 100%;
   background-color: #f4f4f4;
+  position: relative;
   &__tabWrapper {
-    height: 100%;
-    width: 100%;
-    margin: rem(22) 0px rem(31);
+    height: rem(56);
+    width: rem(250);
+    transform: translateY(rem(30));
+    margin: 0px auto;
     background-image: url("../images/projects/projectsTab.svg");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     p {
-      color: white;
+      color: black;
+      font-weight: 900;
       font-size: rem(23);
     }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(12, fr);
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    .card {
+      grid-column: 1/13;
+      margin: 0px auto 40px;
+      cursor: pointer;
+      width: rem(260);
+      height: rem(195);
+      .imgCover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: rem(150);
+        overflow: hidden;
+        img {
+          width: rem(94);
+          height: rem(181);
+        }
+        .second {
+          width: rem(274);
+          height: rem(136);
+        }
+      }
+      .cardFooter {
+        background-color: #3d94e4;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .natureImg {
+    width: rem(271);
+    height: rem(222);
+    position: absolute;
+    top: 90px;
+    right: -60px;
+  }
+  .roomImg {
+    width: rem(270);
+    height: rem(222);
+    position: absolute;
+    left: -40px;
+    bottom: 70px;
   }
 }
