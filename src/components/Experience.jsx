@@ -14,7 +14,9 @@ function Experience() {
         <div className="experience__jobTitleWrapper--first">
           <div className="companyAndTimeline">
             <h3>NetApp</h3>
-            <p className="timeline">September 2020 - Present</p>
+            <p className="timeline" style={{ marginBottom: -3 }}>
+              September 2020 - Present
+            </p>
           </div>
           <p className="jobPosition">React and Django Developer Intern</p>
         </div>

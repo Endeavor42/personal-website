@@ -1,9 +1,8 @@
 @import "./_global.scss";
 
 .skills {
-  height: rem(1880); // remove this later
   &__tabWrapper {
-    height: rem(48.86);
+    height: rem(56);
     width: rem(166);
     margin: rem(22) 0px rem(31);
     background-image: url("../images/skills/skillsTab.svg");
@@ -56,13 +55,53 @@
           justify-content: space-between;
           align-self: center;
         }
+        // .techRow:nth-child(3) {
+        //   width: 100%;
+        // }
         .techItem {
           text-align: center;
           p {
             font-size: rem(12);
-            font-weight: 500;
+            font-weight: 600;
           }
         }
+      }
+    }
+    // Backend
+    .card:nth-child(2) {
+      .cardContent {
+        display: flex;
+        align-items: center;
+      }
+      .techRow {
+        width: 87%;
+        justify-content: space-between;
+      }
+      .techRow:first-child {
+        width: 92%;
+      }
+    }
+    // Design & Cloud
+    .card:nth-child(4),
+    .card:nth-child(5) {
+      .imgCover {
+        height: rem(246);
+      }
+      .techRow {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .cardContent {
+        display: flex;
+        height: calc(100% - 245px);
+      }
+    }
+    .card:nth-child(5) {
+      .techRow {
+        width: 80%;
       }
     }
   }
