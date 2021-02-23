@@ -1,4 +1,5 @@
 @import "./_global.scss";
+$breakpoint-small: 500px;
 
 .skills {
   &__tabWrapper {
@@ -25,8 +26,15 @@
       margin: auto;
       width: rem(335);
       height: rem(398);
+      @media (min-width: $breakpoint-small) {
+        width: 401px;
+        height: 464px;
+      }
       .imgCover {
-        height: rem(120);
+        height: 120px;
+        @media (min-width: $breakpoint-small) {
+          height: 135px;
+        }
         img {
           width: 100%;
         }
@@ -36,11 +44,14 @@
         }
       }
       .cardContent {
-        height: calc(100% - 120px);
+        height: calc(100% - 118px);
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (min-width: $breakpoint-small) {
+          height: calc(100% - 177px);
+        }
         .techRow {
           width: 100%;
           display: flex;
