@@ -53,43 +53,45 @@ function Skills() {
           <CardMedia className="imgCover">
             <img src={frontendCard} alt="frontend" />
           </CardMedia>
-          <CardContent className="cardContent">
-            <div className="techRow">
-              <div className="techItem">
-                <img src={reactImg} alt="React" />
-                <p>React</p>
+          <CardContent className="cardCenter">
+            <div className="cardContent">
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={reactImg} alt="React" />
+                  <p>React</p>
+                </div>
+                <div className="techItem" style={{ marginRight: 5 }}>
+                  <img src={typescriptImg} alt="TypeScript" />
+                  <p>TypeScript</p>
+                </div>
+                <div className="techItem">
+                  <img src={reduxImg} alt="Redux" />
+                  <p>Redux</p>
+                </div>
               </div>
-              <div className="techItem" style={{ marginRight: 5 }}>
-                <img src={typescriptImg} alt="TypeScript" />
-                <p>TypeScript</p>
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={javascriptImg} alt="JavaScript" />
+                  <p>JavaScript</p>
+                </div>
+                <div className="techItem" style={{ marginLeft: 5 }}>
+                  <img src={materialImg} alt="Material-UI" />
+                  <p>Material-UI</p>
+                </div>
+                <div className="techItem">
+                  <img src={reactNativeImg} alt="React Native" />
+                  <p>React Native</p>
+                </div>
               </div>
-              <div className="techItem">
-                <img src={reduxImg} alt="Redux" />
-                <p>Redux</p>
-              </div>
-            </div>
-            <div className="techRow">
-              <div className="techItem">
-                <img src={javascriptImg} alt="JavaScript" />
-                <p>JavaScript</p>
-              </div>
-              <div className="techItem" style={{ marginLeft: 5 }}>
-                <img src={materialImg} alt="Material-UI" />
-                <p>Material-UI</p>
-              </div>
-              <div className="techItem">
-                <img src={reactNativeImg} alt="React Native" />
-                <p>React Native</p>
-              </div>
-            </div>
-            <div className="techRow">
-              <div className="techItem">
-                <img src={htmlImg} alt="HTML" />
-                <p>HTML</p>
-              </div>
-              <div className="techItem">
-                <img src={cssImg} alt="css" />
-                <p>CSS</p>
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={htmlImg} alt="HTML" />
+                  <p>HTML</p>
+                </div>
+                <div className="techItem">
+                  <img src={cssImg} alt="css" />
+                  <p>CSS</p>
+                </div>
               </div>
             </div>
           </CardContent>
@@ -99,47 +101,49 @@ function Skills() {
           <CardMedia className="imgCover">
             <img src={backendCard} alt="frontend" />
           </CardMedia>
-          <CardContent className="cardContent">
-            <div className="techRow">
-              <div className="techItem">
-                <img src={graphqlImg} alt="GraphQL" />
-                <p>GraphQL</p>
+          <CardContent className="cardCenter">
+            <div className="cardContent">
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={graphqlImg} alt="GraphQL" />
+                  <p>GraphQL</p>
+                </div>
+                <div className="techItem">
+                  <img src={nodejsImg} alt="NodeJS" />
+                  <p>NodeJS</p>
+                </div>
+                <div className="techItem">
+                  <img src={mongodbImg} alt="MongoDB" />
+                  <p>MongoDB</p>
+                </div>
               </div>
-              <div className="techItem">
-                <img src={nodejsImg} alt="NodeJS" />
-                <p>NodeJS</p>
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={postgresqlImg} alt="PostgreSQL" />
+                  <p>JavaScript</p>
+                </div>
+                <div className="techItem" style={{ marginRight: 5 }}>
+                  <img src={djangoImg} alt="Django" />
+                  <p>Django</p>
+                </div>
+                <div className="techItem">
+                  <img src={expressImg} alt="ExpressJS" />
+                  <p>ExpressJS</p>
+                </div>
               </div>
-              <div className="techItem">
-                <img src={mongodbImg} alt="MongoDB" />
-                <p>MongoDB</p>
-              </div>
-            </div>
-            <div className="techRow">
-              <div className="techItem">
-                <img src={postgresqlImg} alt="PostgreSQL" />
-                <p>JavaScript</p>
-              </div>
-              <div className="techItem" style={{ marginRight: 5 }}>
-                <img src={djangoImg} alt="Django" />
-                <p>Django</p>
-              </div>
-              <div className="techItem">
-                <img src={expressImg} alt="ExpressJS" />
-                <p>ExpressJS</p>
-              </div>
-            </div>
-            <div className="techRow">
-              <div className="techItem">
-                <img src={apolloImg} alt="Apollo" />
-                <p>Apollo</p>
-              </div>
-              <div className="techItem">
-                <img src={pythonImg} alt="Python" />
-                <p>Python</p>
-              </div>
-              <div className="techItem">
-                <img src={dockerImg} alt="Docker" />
-                <p>CSS</p>
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={apolloImg} alt="Apollo" />
+                  <p>Apollo</p>
+                </div>
+                <div className="techItem">
+                  <img src={pythonImg} alt="Python" />
+                  <p>Python</p>
+                </div>
+                <div className="techItem">
+                  <img src={dockerImg} alt="Docker" />
+                  <p>CSS</p>
+                </div>
               </div>
             </div>
           </CardContent>
@@ -149,43 +153,45 @@ function Skills() {
           <CardMedia className="imgCover">
             <img src={toolsCard} alt="frontend" />
           </CardMedia>
-          <CardContent className="cardContent">
-            <div className="techRow">
-              <div className="techItem">
-                <img src={gitImg} alt="Git" />
-                <p>Git</p>
+          <CardContent className="cardCenter">
+            <div className="cardContent">
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={gitImg} alt="Git" />
+                  <p>Git</p>
+                </div>
+                <div className="techItem" style={{ marginRight: 5 }}>
+                  <img src={githubImg} alt="Github" />
+                  <p>Github</p>
+                </div>
+                <div className="techItem">
+                  <img src={bitbucketImg} alt="Bitbucket" />
+                  <p>Redux</p>
+                </div>
               </div>
-              <div className="techItem" style={{ marginRight: 5 }}>
-                <img src={githubImg} alt="Github" />
-                <p>Github</p>
+              <div className="techRow" style={{ width: "85%" }}>
+                <div className="techItem">
+                  <img src={linuxImg} alt="Linux" />
+                  <p>Linux</p>
+                </div>
+                <div className="techItem" style={{ marginLeft: 5 }}>
+                  <img src={vscodeImg} alt="VSCode" />
+                  <p>VSCode</p>
+                </div>
+                <div className="techItem">
+                  <img src={vimImg} alt="Vim" />
+                  <p>Vim</p>
+                </div>
               </div>
-              <div className="techItem">
-                <img src={bitbucketImg} alt="Bitbucket" />
-                <p>Redux</p>
-              </div>
-            </div>
-            <div className="techRow" style={{ width: "85%" }}>
-              <div className="techItem">
-                <img src={linuxImg} alt="Linux" />
-                <p>Linux</p>
-              </div>
-              <div className="techItem" style={{ marginLeft: 5 }}>
-                <img src={vscodeImg} alt="VSCode" />
-                <p>VSCode</p>
-              </div>
-              <div className="techItem">
-                <img src={vimImg} alt="Vim" />
-                <p>Vim</p>
-              </div>
-            </div>
-            <div className="techRow">
-              <div className="techItem">
-                <img src={atlassianImg} alt="Atlassian" />
-                <p>Atlassian</p>
-              </div>
-              <div className="techItem">
-                <img src={postmanImg} alt="Postman" />
-                <p>Postman</p>
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={atlassianImg} alt="Atlassian" />
+                  <p>Atlassian</p>
+                </div>
+                <div className="techItem">
+                  <img src={postmanImg} alt="Postman" />
+                  <p>Postman</p>
+                </div>
               </div>
             </div>
           </CardContent>
@@ -195,15 +201,17 @@ function Skills() {
           <CardMedia className="imgCover">
             <img src={designCard} alt="frontend" />
           </CardMedia>
-          <CardContent className="cardContent">
-            <div className="techRow">
-              <div className="techItem">
-                <img src={figmaImg} alt="Figma" />
-                <p>React</p>
-              </div>
-              <div className="techItem">
-                <img src={adobexdImg} alt="Adobe XD" />
-                <p>TypeScript</p>
+          <CardContent className="cardCenter">
+            <div className="cardContent">
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={figmaImg} alt="Figma" />
+                  <p>React</p>
+                </div>
+                <div className="techItem">
+                  <img src={adobexdImg} alt="Adobe XD" />
+                  <p>TypeScript</p>
+                </div>
               </div>
             </div>
           </CardContent>
@@ -213,19 +221,21 @@ function Skills() {
           <CardMedia className="imgCover">
             <img src={cloudCard} alt="frontend" />
           </CardMedia>
-          <CardContent className="cardContent">
-            <div className="techRow">
-              <div className="techItem">
-                <img src={firebaseImg} alt="firebase" />
-                <p>React</p>
-              </div>
-              <div className="techItem">
-                <img src={azureImg} alt="Azure" />
-                <p>TypeScript</p>
-              </div>
-              <div className="techItem">
-                <img src={stripeImg} alt="Stripe" />
-                <p>TypeScript</p>
+          <CardContent className="cardCenter">
+            <div className="cardContent">
+              <div className="techRow">
+                <div className="techItem">
+                  <img src={firebaseImg} alt="firebase" />
+                  <p>React</p>
+                </div>
+                <div className="techItem">
+                  <img src={azureImg} alt="Azure" />
+                  <p>TypeScript</p>
+                </div>
+                <div className="techItem">
+                  <img src={stripeImg} alt="Stripe" />
+                  <p>TypeScript</p>
+                </div>
               </div>
             </div>
           </CardContent>
