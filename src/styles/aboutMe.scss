@@ -2,9 +2,9 @@
 
 .aboutMe {
   width: 100%;
-  height: calc(100% - 40px);
+  height: calc(100% - 45px);
   max-height: 774px;
-  margin-top: 40px;
+  margin-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,8 +55,6 @@
         height: 0.35em;
         min-width: rem(111);
         width: 25%;
-        // height: rem(5);
-        // width: rem(111);
         background-color: #5f2eea;
       }
     }
@@ -88,8 +86,6 @@
   .minion--front {
     max-width: 100%;
     height: auto;
-    // max-width: rem(80);
-    // max-height: rem(87);
   }
   .minion--back {
     width: rem(54);
