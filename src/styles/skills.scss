@@ -8,12 +8,21 @@ $breakpoint-small: 500px;
     margin: rem(22) 0px rem(31);
     background-image: url("../images/skills/skillsTab.svg");
     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 12px 12px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     p {
       color: white;
       font-size: rem(23);
+    }
+    @media (min-width: $breakpoint-small) {
+      height: rem(71);
+      width: rem(181);
+      p {
+        font-size: rem(28);
+      }
     }
   }
   &__cards {

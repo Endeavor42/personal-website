@@ -1,4 +1,5 @@
 @import "./_global.scss";
+$breakpoint-small: 500px;
 
 .projects {
   height: rem(790);
@@ -6,19 +7,28 @@
   background-color: #f4f4f4;
   position: relative;
   &__tabWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: rem(56);
     width: rem(250);
     transform: translateY(rem(30));
     margin: 0px auto;
     background-image: url("../images/projects/projectsTab.svg");
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    border-radius: 0 15px 15px 0;
     p {
       color: black;
       font-weight: 900;
       font-size: rem(23);
+    }
+    @media (min-width: $breakpoint-small) {
+      height: rem(71);
+      width: rem(312);
+      p {
+        font-size: rem(28);
+      }
     }
   }
   &__cards {
@@ -27,6 +37,9 @@
     position: absolute;
     top: 140px;
     width: 100%;
+    @media (min-width: $breakpoint-small) {
+      top: 160px;
+    }
     .card {
       grid-column: 1/13;
       margin: 0px auto 40px;

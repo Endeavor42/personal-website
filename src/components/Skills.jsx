@@ -160,7 +160,7 @@ function Skills() {
                   <img src={gitImg} alt="Git" />
                   <p>Git</p>
                 </div>
-                <div className="techItem" style={{ marginRight: 5 }}>
+                <div className="techItem">
                   <img src={githubImg} alt="Github" />
                   <p>Github</p>
                 </div>
@@ -174,7 +174,7 @@ function Skills() {
                   <img src={linuxImg} alt="Linux" />
                   <p>Linux</p>
                 </div>
-                <div className="techItem" style={{ marginLeft: 5 }}>
+                <div className="techItem">
                   <img src={vscodeImg} alt="VSCode" />
                   <p>VSCode</p>
                 </div>

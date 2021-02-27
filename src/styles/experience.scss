@@ -1,19 +1,29 @@
 @import "./_global.scss";
+$breakpoint-small: 500px;
 
 .experience {
   &__tabWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: rem(48.86);
     width: rem(166);
     margin: rem(22) 0px rem(31);
     background-image: url("../images/experience/experienceTab.svg");
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    border-radius: 0 12px 12px 0;
     p {
       color: white;
       font-size: clamp(1.313rem, 4vw, 1.4rem);
       // font-size: rem(21);
+    }
+    @media (min-width: $breakpoint-small) {
+      height: rem(71);
+      width: rem(195);
+      p {
+        font-size: rem(28);
+      }
     }
   }
   &__container {
