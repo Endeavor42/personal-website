@@ -34,6 +34,7 @@ $breakpoint-tablet: 768px;
     @media (min-width: 900px) {
       grid-template-columns: repeat(2, 400px);
       justify-content: center;
+      gap: 35px;
     }
     .card {
       grid-column: 1/13;
