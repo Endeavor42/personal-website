@@ -1,5 +1,6 @@
 @import "./_global.scss";
 $breakpoint-small: 500px;
+$breakpoint-tablet: 768px;
 
 .experience {
   &__tabWrapper {
@@ -77,12 +78,26 @@ $breakpoint-small: 500px;
     }
   }
   &__cards {
+    display: grid;
     margin: rem(30) 0px rem(50);
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    @media (min-width: $breakpoint-tablet) {
+      // margin-top: 15px;
+      margin: 45px 0px 65px;
+      grid-template-columns: repeat(2, 320px);
+    }
     .card {
+      grid-column: 1/13;
       margin: auto;
       cursor: pointer;
       width: rem(260);
       height: rem(195);
+      @media (min-width: $breakpoint-tablet) {
+        grid-column: auto;
+        grid-row: 1;
+      }
       .imgCover {
         background-color: #fafafa;
         display: flex;
@@ -111,7 +126,7 @@ $breakpoint-small: 500px;
       }
     }
     .card:nth-child(2) {
-      margin-top: rem(30);
+      // margin-top: rem(30);
     }
   }
 }
