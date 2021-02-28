@@ -1,11 +1,15 @@
 @import "./_global.scss";
 $breakpoint-small: 500px;
+$breakpoint-tablet: 768px;
 
 .projects {
   height: rem(790);
   width: 100%;
   background-color: #f4f4f4;
   position: relative;
+  @media (min-width: $breakpoint-tablet) {
+    height: rem(495);
+  }
   &__tabWrapper {
     display: flex;
     justify-content: center;
@@ -32,20 +36,31 @@ $breakpoint-small: 500px;
     }
   }
   &__cards {
-    display: grid;
-    grid-template-columns: repeat(12, fr);
     position: absolute;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
     top: 140px;
     width: 100%;
+    margin: auto;
+    justify-content: center;
     @media (min-width: $breakpoint-small) {
       top: 160px;
     }
+    @media (min-width: $breakpoint-tablet) {
+      margin: auto;
+      grid-template-columns: repeat(2, 320px);
+    }
     .card {
       grid-column: 1/13;
-      margin: 0px auto 40px;
+      margin: auto;
       cursor: pointer;
       width: rem(260);
       height: rem(195);
+      @media (min-width: $breakpoint-tablet) {
+        grid-column: auto;
+        grid-row: 1;
+      }
       .imgCover {
         display: flex;
         justify-content: center;

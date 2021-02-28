@@ -17,7 +17,6 @@ $breakpoint-tablet: 768px;
     p {
       color: white;
       font-size: clamp(1.313rem, 4vw, 1.4rem);
-      // font-size: rem(21);
     }
     @media (min-width: $breakpoint-small) {
       height: rem(71);
@@ -34,12 +33,10 @@ $breakpoint-tablet: 768px;
 
   h3 {
     font-size: clamp(1.25rem, 6vw, 1.8rem);
-    // font-size: rem(20);
     margin-right: rem(10);
   }
   .timeline {
     font-size: clamp(0.75rem, 4vw, 1.2rem);
-    // font-size: rem(12);
     color: #606060;
   }
   &__jobTitleWrapper--first {
@@ -51,7 +48,6 @@ $breakpoint-tablet: 768px;
     .jobPosition {
       font-size: clamp(1rem, 4vw, 1.2rem);
       font-style: italic;
-      // font-size: 50px;
     }
   }
   &__jobTitleWrapper--second {
@@ -59,7 +55,6 @@ $breakpoint-tablet: 768px;
     .jobPosition {
       padding-right: rem(20);
       font-size: clamp(1rem, 4vw, 1.2rem);
-      // font-size: 1rem;
       font-style: italic;
     }
   }
@@ -84,16 +79,15 @@ $breakpoint-tablet: 768px;
     grid-template-columns: repeat(12, 1fr);
     gap: 30px;
     @media (min-width: $breakpoint-tablet) {
-      // margin-top: 15px;
       margin: 45px 0px 65px;
       grid-template-columns: repeat(2, 320px);
     }
     .card {
+      width: rem(260);
+      height: rem(195);
       grid-column: 1/13;
       margin: auto;
       cursor: pointer;
-      width: rem(260);
-      height: rem(195);
       @media (min-width: $breakpoint-tablet) {
         grid-column: auto;
         grid-row: 1;
@@ -124,9 +118,6 @@ $breakpoint-tablet: 768px;
         width: 100%;
         height: auto;
       }
-    }
-    .card:nth-child(2) {
-      // margin-top: rem(30);
     }
   }
 }
