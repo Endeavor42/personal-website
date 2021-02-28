@@ -102,4 +102,9 @@ $breakpoint-tablet: 768px;
     left: -40px;
     bottom: 70px;
   }
+  @media (min-width: $breakpoint-tablet) {
+    .roomImg {
+      bottom: 35px;
+    }
+  }
 }
