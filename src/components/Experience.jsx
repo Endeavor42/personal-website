@@ -57,6 +57,7 @@ function Experience() {
         <ul>
           <li>
             Implemented Context API to reduce the number of requests made to the
+            database by 87%-93%
           </li>
           <li>
             Developed a login page with React Native and validated user inputs
