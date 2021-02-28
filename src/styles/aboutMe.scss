@@ -1,4 +1,5 @@
 @import "./_global.scss";
+$breakpoint-tablet: 768px;
 
 .aboutMe {
   width: 100%;
@@ -32,6 +33,16 @@
         height: auto;
       }
     }
+    @media (min-width: $breakpoint-tablet) {
+      max-width: 500px;
+      .rightImg {
+        img {
+          width: 234.4px;
+          height: 291.2px;
+          margin-left: 50px;
+        }
+      }
+    }
   }
   &__textWrapper {
     width: 90%;
@@ -41,7 +52,7 @@
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      height: clamp(97.16px, 17vw, 720px);
+      height: clamp(97.16px, 17vw, 145px);
       align-items: center;
       margin-bottom: rem(20);
       h1 {
@@ -56,6 +67,7 @@
         min-width: rem(111);
         width: 25%;
         background-color: #5f2eea;
+        border: none;
       }
     }
     .description {
@@ -65,6 +77,17 @@
         text-align: center;
         font-size: clamp(1rem, 4vw, 1.2rem);
         line-height: 200%;
+      }
+    }
+    @media (min-width: $breakpoint-tablet) {
+      .titleWrapper {
+        max-height: 320px;
+      }
+      hr {
+        max-width: 188px;
+      }
+      .description {
+        max-width: 764px;
       }
     }
   }
