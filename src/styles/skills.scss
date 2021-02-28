@@ -1,5 +1,6 @@
 @import "./_global.scss";
 $breakpoint-small: 500px;
+$breakpoint-tablet: 768px;
 
 .skills {
   &__tabWrapper {
@@ -39,10 +40,17 @@ $breakpoint-small: 500px;
         width: 401px;
         height: 464px;
       }
+      @media (min-width: $breakpoint-small) {
+        width: 451px;
+        height: 514px;
+      }
       .imgCover {
         height: 120px;
         @media (min-width: $breakpoint-small) {
           height: 135px;
+        }
+        @media (min-width: $breakpoint-small) {
+          height: 150px;
         }
         img {
           width: 100%;
@@ -53,7 +61,11 @@ $breakpoint-small: 500px;
         }
       }
       .cardCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: calc(100% - 118px);
+        width: 100%;
         @media (min-width: $breakpoint-small) {
           height: calc(100% - 134px);
         }
@@ -67,6 +79,10 @@ $breakpoint-small: 500px;
         height: 100%;
         @media (min-width: $breakpoint-small) {
           // height: calc(100% - 177px);
+        }
+        @media (min-width: $breakpoint-small) {
+          height: 92%;
+          width: 95%;
         }
         .techRow {
           width: 100%;
@@ -87,6 +103,15 @@ $breakpoint-small: 500px;
           p {
             font-size: rem(12);
             font-weight: 600;
+          }
+          @media (min-width: $breakpoint-small) {
+            img {
+              height: 45px;
+              width: 44px;
+            }
+            p {
+              font-size: rem(15);
+            }
           }
         }
       }
@@ -111,7 +136,7 @@ $breakpoint-small: 500px;
       .cardCenter {
         height: calc(100% - 245px);
         @media (min-width: $breakpoint-small) {
-          height: calc(100% - 205px);
+          height: calc(100% - 165px);
         }
       }
       .imgCover {

@@ -206,11 +206,11 @@ function Skills() {
               <div className="techRow">
                 <div className="techItem">
                   <img src={figmaImg} alt="Figma" />
-                  <p>React</p>
+                  <p>Figma</p>
                 </div>
                 <div className="techItem">
                   <img src={adobexdImg} alt="Adobe XD" />
-                  <p>TypeScript</p>
+                  <p>Adobe XD</p>
                 </div>
               </div>
             </div>
@@ -226,7 +226,7 @@ function Skills() {
               <div className="techRow">
                 <div className="techItem">
                   <img src={firebaseImg} alt="firebase" />
-                  <p>React</p>
+                  <p>Firebase</p>
                 </div>
                 <div className="techItem">
                   <img src={azureImg} alt="Azure" />
@@ -234,7 +234,7 @@ function Skills() {
                 </div>
                 <div className="techItem">
                   <img src={stripeImg} alt="Stripe" />
-                  <p>TypeScript</p>
+                  <p>Stripe</p>
                 </div>
               </div>
             </div>
