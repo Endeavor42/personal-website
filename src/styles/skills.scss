@@ -31,6 +31,10 @@ $breakpoint-tablet: 768px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 25px;
+    @media (min-width: 900px) {
+      grid-template-columns: repeat(2, 400px);
+      justify-content: center;
+    }
     .card {
       grid-column: 1/13;
       margin: auto;
@@ -40,10 +44,18 @@ $breakpoint-tablet: 768px;
         width: 451px;
         height: 514px;
       }
+      @media (min-width: 900px) {
+        grid-column: auto;
+        width: 385px;
+        height: 448px;
+      }
       .imgCover {
         height: 120px;
         @media (min-width: $breakpoint-small) {
           height: 150px;
+        }
+        @media (min-width: 900px) {
+          height: 120px;
         }
         img {
           width: 100%;
@@ -61,6 +73,9 @@ $breakpoint-tablet: 768px;
         width: 100%;
         @media (min-width: $breakpoint-small) {
           height: calc(100% - 134px);
+        }
+        @media (min-width: 900px) {
+          height: calc(100% - 118px);
         }
       }
       .cardContent {
@@ -128,6 +143,9 @@ $breakpoint-tablet: 768px;
         @media (min-width: $breakpoint-small) {
           height: calc(100% - 165px);
         }
+        @media (min-width: 900px) {
+          height: calc(100% - 210px);
+        }
       }
       .imgCover {
         height: rem(246);
@@ -144,9 +162,23 @@ $breakpoint-tablet: 768px;
         height: 100%;
       }
     }
+    // cloud
     .card:nth-child(5) {
       .techRow {
         width: 80%;
+      }
+      @media (min-width: 900px) {
+        grid-column: 1/3;
+        width: 98%;
+        height: 100%;
+        display: flex;
+        img {
+          height: 100%;
+          width: auto;
+        }
+        .cardCenter {
+          height: 100%;
+        }
       }
     }
   }

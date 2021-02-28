@@ -219,7 +219,7 @@ function Skills() {
         {/* Cloud */}
         <Card className="card">
           <CardMedia className="imgCover">
-            <img src={cloudCard} alt="frontend" />
+            <img src={cloudCard} alt="Cloud" />
           </CardMedia>
           <CardContent className="cardCenter">
             <div className="cardContent">
