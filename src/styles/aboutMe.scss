@@ -1,5 +1,6 @@
 @import "./_global.scss";
 $breakpoint-tablet: 768px;
+$breakpoint-ipad: 1040px;
 
 .aboutMe {
   width: 100%;
@@ -10,6 +11,10 @@ $breakpoint-tablet: 768px;
   flex-direction: column;
   align-items: center;
   background-color: #fbfbfb;
+  @media (min-width: $breakpoint-ipad) {
+    height: calc(100% - 66px);
+    margin-top: 66px;
+  }
   &__topImgContainer {
     width: 100%;
     min-width: 300px;

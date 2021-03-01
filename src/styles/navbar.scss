@@ -56,19 +56,22 @@ $breakpoint-large-tablet: 1040px;
     &__links {
       display: flex;
       justify-content: space-between;
-      width: 720px;
+      width: 730px;
       list-style-type: none;
       font-size: 24px;
       padding-left: 0px;
       li {
         position: relative;
-        padding: 10px 14px;
+        padding: 6px 15px;
         color: white;
-        border-radius: 12px;
         cursor: pointer;
+        margin-top: 3px;
+        p:hover {
+          text-decoration: underline;
+          text-decoration-color: #666666;
+        }
         .tagsWrapper {
-          // display: none;
-          top: 2px;
+          top: 0px;
           right: 0;
           position: absolute;
           height: 100%;
@@ -102,7 +105,7 @@ $breakpoint-large-tablet: 1040px;
     a {
       font-size: 24px;
       border-radius: 25px;
-      padding: 4px 12px;
+      padding: 4px 15px;
       img {
         height: 22px;
         width: 20px;
