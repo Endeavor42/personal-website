@@ -2,8 +2,6 @@ import "../styles/projects.scss";
 import natureImg from "../images/projects/nature.svg";
 import roomImg from "../images/projects/room.svg";
 import { Card, CardActions, CardMedia } from "@material-ui/core";
-import mobileMockupImg from "../images/experience/mobileMockup.svg";
-import websiteMockupImg from "../images/experience/websiteMockup.svg";
 
 function Projects() {
   return (
