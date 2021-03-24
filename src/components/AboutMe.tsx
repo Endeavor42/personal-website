@@ -4,14 +4,22 @@ import globeImg from "../images/about_me/globe.svg";
 import minionFrontImg from "../images/about_me/minion_front.svg";
 import minionBackImg from "../images/about_me/minion_back.svg";
 import blobsImg from "../images/about_me/blobsGroup.svg";
+import phonesIpadImg from "../images/about_me/phones-ipad.svg";
+import blobsIpadImg from "../images/about_me/blobsGroup-ipad.svg";
 
 function AboutMe() {
   return (
     <div className="aboutMe">
       <div className="aboutMe__topImgContainer">
         <img className="phonesImg" src={phonesImg} alt="Phones" />
+        <img className="phonesIpadImg" src={phonesIpadImg} alt="Phones" />
         <div className="rightImg">
-          <img src={blobsImg} alt="computer and blobs" />
+          <img className="blobsImg" src={blobsImg} alt="computer and blobs" />
+          <img
+            className="blobsIpadImg"
+            src={blobsIpadImg}
+            alt="computer and blobs"
+          />
         </div>
       </div>
       <div className="aboutMe__textWrapper">
