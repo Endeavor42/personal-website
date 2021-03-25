@@ -1,6 +1,8 @@
 @import "./_global.scss";
 $breakpoint-small: 500px;
 $breakpoint-tablet: 768px;
+$breakpoint-ipad: 1040px;
+$breakpoint-large: 1440px;
 
 .experience {
   &__tabWrapper {
@@ -117,6 +119,37 @@ $breakpoint-tablet: 768px;
         justify-content: center;
         width: 100%;
         height: auto;
+      }
+    }
+  }
+}
+
+// @media (min-width: $breakpoint-ipad) {
+@media (min-width: $breakpoint-large) {
+  .experience {
+    &__jobTitleWrapper--first {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .companyAndTimeline {
+        h3 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 20px;
+          margin-left: 10px;
+        }
+      }
+      .jobPosition {
+        font-size: 24px;
+      }
+    }
+    &__tabWrapper {
+      width: rem(300);
+      height: rem(90);
+      border-radius: 0 15px 15px 0;
+      p {
+        font-size: rem(40);
       }
     }
   }
