@@ -46,6 +46,7 @@ $breakpoint-large: 1440px;
         width: 451px;
         height: 514px;
       }
+      // NOTES: Reference
       @media (min-width: 900px) {
         grid-column: auto;
         width: 385px;
@@ -110,8 +111,8 @@ $breakpoint-large: 1440px;
           p {
             font-size: rem(12);
             font-family: "Montserrat";
-            font-weight: bold;
-            color: rgba(0, 0, 0, 0.75);
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.8);
           }
           @media (min-width: $breakpoint-small) {
             img {
@@ -196,6 +197,39 @@ $breakpoint-large: 1440px;
       border-radius: 0 15px 15px 0;
       p {
         font-size: rem(40);
+      }
+      margin-bottom: 70px;
+    }
+    &__cards {
+      grid-template-columns: repeat(2, calc(465px + 1%));
+      .card {
+        width: 460px;
+        height: 540px;
+        .imgCover {
+          height: 144px;
+        }
+        .cardCenter {
+          height: calc(100% - 118px);
+        }
+        .cardContent {
+          height: 86%;
+          width: 95%;
+          .techItem {
+            img {
+              height: 56px;
+              width: 58px;
+            }
+            p {
+              font-size: rem(17);
+            }
+          }
+        }
+        gap: calc(40px + 1%);
+      }
+      .card:nth-child(4) {
+        .cardCenter {
+          height: calc(100% - 165px);
+        }
       }
     }
   }
