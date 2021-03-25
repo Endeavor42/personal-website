@@ -201,7 +201,8 @@ $breakpoint-large: 1440px;
       margin-bottom: 70px;
     }
     &__cards {
-      grid-template-columns: repeat(2, calc(465px + 1%));
+      grid-template-columns: repeat(2, calc(465px + 2%));
+      gap: calc(40px + 1%);
       .card {
         width: 460px;
         height: 540px;
@@ -224,11 +225,20 @@ $breakpoint-large: 1440px;
             }
           }
         }
-        gap: calc(40px + 1%);
       }
       .card:nth-child(4) {
         .cardCenter {
           height: calc(100% - 165px);
+        }
+      }
+      .card:nth-child(5) {
+        height: 275px;
+        margin-bottom: 50px;
+        .cardCenter {
+          height: 100%;
+        }
+        .imgCover {
+          height: 100%;
         }
       }
     }
