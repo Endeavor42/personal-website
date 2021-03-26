@@ -1,6 +1,7 @@
 @import "./_global.scss";
 $breakpoint-small: 500px;
 $breakpoint-tablet: 768px;
+$breakpoint-large: 1440px;
 
 .projects {
   height: rem(790);
@@ -105,6 +106,55 @@ $breakpoint-tablet: 768px;
   @media (min-width: $breakpoint-tablet) {
     .roomImg {
       bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .projects {
+    height: 783px;
+    // grid-template-columns: repeat(2, 250px);
+    &__tabWrapper {
+      height: 100px;
+      width: 430px;
+      transform: translateY(65px);
+      p {
+        font-size: rem(44);
+        font-weight: 700;
+      }
+    }
+    &__cards {
+      gap: 120px;
+      top: 270px;
+      grid-template-columns: repeat(2, 360px);
+      .card {
+        display: flex;
+        flex-direction: column;
+        // width: 360px;
+        width: 100%;
+        height: 310px;
+        .imgCover {
+          flex: 1;
+          img {
+            width: rem(94);
+            height: rem(181);
+          }
+        }
+        .cardFooter {
+          height: 75px;
+          font-size: 22px;
+          font-weight: 700;
+        }
+      }
+    }
+    .natureImg {
+      width: 423px;
+      height: 277px;
+      top: 180px;
+    }
+    .roomImg {
+      width: 345px;
+      height: 286px;
     }
   }
 }
