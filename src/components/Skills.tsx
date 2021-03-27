@@ -166,7 +166,7 @@ function Skills() {
                 </div>
                 <div className="techItem">
                   <img src={bitbucketImg} alt="Bitbucket" />
-                  <p>Redux</p>
+                  <p>Bitbucket</p>
                 </div>
               </div>
               <div className="techRow" style={{ width: "85%" }}>

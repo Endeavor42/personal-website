@@ -3,6 +3,7 @@ $breakpoint-small: 500px;
 $breakpoint-tablet: 768px;
 $breakpoint-ipad: 1040px;
 $breakpoint-large: 1440px;
+$breakpoint-desktop: 1920px;
 
 .experience {
   &__tabWrapper {
@@ -27,6 +28,9 @@ $breakpoint-large: 1440px;
         font-size: rem(28);
       }
     }
+  }
+  &__room {
+    display: none;
   }
   &__container {
     width: 80%;
@@ -157,6 +161,7 @@ $breakpoint-large: 1440px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 40px;
+      margin-left: 45px;
       list-style: none;
       li {
         font-size: 22px;
@@ -174,10 +179,35 @@ $breakpoint-large: 1440px;
       }
     }
     &__cards {
-      margin-top: 60px;
+      // margin-left: 100px;
+      margin-left: 7.5%;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 1fr 1fr;
+      background-image: url("../images/experience/room.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 450px;
+      grid-gap: 0;
+      .card {
+        grid-column: 2/4;
+        .imgCover {
+          background-color: white;
+        }
+      }
+      .card:nth-child(2) {
+        grid-row: 2;
+      }
     }
     &__container {
       max-width: 1300px;
     }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .experience {
+    // &__room {
+    //   display: block;
+    // }
   }
 }
