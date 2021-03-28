@@ -2,6 +2,7 @@
 $breakpoint-tablet: 768px;
 $breakpoint-ipad: 1040px;
 $breakpoint-large: 1440px;
+$breakpoint-desktop: 1920px;
 
 .aboutMe {
   width: 100%;
@@ -166,7 +167,7 @@ $breakpoint-large: 1440px;
   }
   .phonesIpadImg {
     display: block;
-    height: 80%;
+    height: 70%;
   }
   .blobsIpadImg {
     display: block;
@@ -212,7 +213,44 @@ $breakpoint-large: 1440px;
 }
 
 // Desktop
-@media (min-width: $breakpoint-large) {
+@media (min-width: $breakpoint-desktop) {
   .aboutMe {
+    height: calc(100vh - 66px);
+    position: relative;
+    &__topImgContainer {
+      position: absolute;
+      min-width: none;
+      max-width: none;
+      width: 100%;
+      display: grid;
+      margin: 0;
+      .phonesIpadImg {
+        transform: translate(50px, 70px);
+        height: 480px;
+      }
+      .rightImg {
+        grid-column: 9/13;
+        height: 740px;
+        width: 100%;
+        transform: translate(100px, -30px);
+      }
+    }
+    &__textWrapper {
+      margin-top: 100px;
+      .titleWrapper {
+        h1 {
+          font-size: 60px;
+        }
+        hr {
+          margin-top: 12px;
+          width: 50%;
+        }
+      }
+      .description {
+        p {
+          font-size: 26px;
+        }
+      }
+    }
   }
 }
