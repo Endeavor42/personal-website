@@ -225,8 +225,8 @@ $breakpoint-desktop: 1920px;
       display: grid;
       margin: 0;
       .phonesIpadImg {
-        transform: translate(50px, 70px);
-        height: 480px;
+        transform: translate(50px, 80px);
+        height: 500px;
       }
       .rightImg {
         grid-column: 9/13;
@@ -237,6 +237,7 @@ $breakpoint-desktop: 1920px;
     }
     &__textWrapper {
       margin-top: 100px;
+      width: 44%;
       .titleWrapper {
         h1 {
           font-size: 60px;
@@ -251,6 +252,17 @@ $breakpoint-desktop: 1920px;
           font-size: 26px;
         }
       }
+    }
+    &__globeImg {
+      width: 80px;
+      height: 80px;
+    }
+    &__bottomImgWrapper {
+      // justify-content: flex-start;
+    }
+    &__minionsContainer {
+      // width: 20%;
+      margin-top: 35px;
     }
   }
 }

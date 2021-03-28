@@ -3,6 +3,7 @@ import Card from "@material-ui/core/Card";
 import { CardActions, CardMedia } from "@material-ui/core";
 import mobileMockupImg from "../images/experience/mobileMockup.svg";
 import websiteMockupImg from "../images/experience/websiteMockup.svg";
+import dudeImg from "../images/experience/dude.svg";
 
 function Experience() {
   return (
@@ -11,6 +12,9 @@ function Experience() {
         <p>Experience</p>
       </div>
       <div className="experience__container">
+        <div className="experience__dude">
+          <img src={dudeImg} alt="Dude" />
+        </div>
         <div className="experience__jobTitleWrapper--first">
           <div className="companyAndTimeline">
             <h3>NetApp</h3>

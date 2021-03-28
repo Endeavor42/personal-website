@@ -120,7 +120,7 @@ function Skills() {
               <div className="techRow">
                 <div className="techItem">
                   <img src={postgresqlImg} alt="PostgreSQL" />
-                  <p>JavaScript</p>
+                  <p>PostgreSQL</p>
                 </div>
                 <div className="techItem" style={{ marginRight: 5 }}>
                   <img src={djangoImg} alt="Django" />

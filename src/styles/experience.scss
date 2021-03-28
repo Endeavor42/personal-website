@@ -29,6 +29,9 @@ $breakpoint-desktop: 1920px;
       }
     }
   }
+  &__dude {
+    display: none;
+  }
   &__room {
     display: none;
   }
@@ -209,5 +212,19 @@ $breakpoint-desktop: 1920px;
     // &__room {
     //   display: block;
     // }
+    &__container {
+      width: 95%;
+    }
+    &__tabWrapper {
+      margin-top: 40px;
+      width: 385px;
+      height: 122px;
+      p {
+        font-size: 48px;
+      }
+    }
+    &__dude {
+      display: block;
+    }
   }
 }
