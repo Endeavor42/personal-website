@@ -187,7 +187,7 @@ $breakpoint-large: 1440px;
       p {
         font-size: 30px;
       }
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
     .description {
       p {
@@ -201,12 +201,18 @@ $breakpoint-large: 1440px;
       width: rem(620);
     }
     .minion--front {
-      width: rem(85);
+      width: rem(95);
       height: auto;
     }
     .minion--back {
-      width: rem(70);
+      width: rem(75);
       height: auto;
     }
+  }
+}
+
+// Desktop
+@media (min-width: $breakpoint-large) {
+  .aboutMe {
   }
 }
