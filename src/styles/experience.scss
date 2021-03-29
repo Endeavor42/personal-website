@@ -39,7 +39,6 @@ $breakpoint-desktop: 1920px;
     width: 80%;
     margin: auto;
   }
-
   h3 {
     font-size: clamp(1.25rem, 6vw, 1.8rem);
     margin-right: rem(10);
@@ -209,11 +208,10 @@ $breakpoint-desktop: 1920px;
 
 @media (min-width: $breakpoint-desktop) {
   .experience {
-    // &__room {
-    //   display: block;
-    // }
     &__container {
-      width: 95%;
+      // width: 92%;
+      width: 91%;
+      max-width: none;
     }
     &__tabWrapper {
       margin-top: 40px;
@@ -223,8 +221,28 @@ $breakpoint-desktop: 1920px;
         font-size: 48px;
       }
     }
-    &__dude {
-      display: block;
+    &__jobTitleWrapper--first,
+    &__jobTitleWrapper--second {
+      align-items: flex-start;
     }
+    &__dude {
+      display: inline-block;
+    }
+    &__row1 {
+      display: flex;
+      align-items: center;
+    }
+    ul {
+      margin-left: 0px;
+      li::before {
+        font-size: 55px;
+        top: -5px;
+        left: -36px;
+      }
+    }
+    &__description--first {
+      margin-left: 80px;
+    }
+    // Increase the size of the bullet points
   }
 }
