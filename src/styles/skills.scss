@@ -2,6 +2,7 @@
 $breakpoint-small: 500px;
 $breakpoint-tablet: 768px;
 $breakpoint-large: 1440px;
+$breakpoint-desktop: 1920px;
 
 .skills {
   &__tabWrapper {
@@ -240,6 +241,19 @@ $breakpoint-large: 1440px;
         .imgCover {
           height: 100%;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .skills {
+    &__tabWrapper {
+      margin-top: 40px;
+      width: 340px;
+      height: 119px;
+      p {
+        font-size: 48px;
       }
     }
   }
