@@ -2,6 +2,7 @@
 $breakpoint-small: 500px;
 $breakpoint-tablet: 768px;
 $breakpoint-large: 1440px;
+$breakpoint-desktop: 1920px;
 
 .projects {
   height: rem(790);
@@ -113,7 +114,6 @@ $breakpoint-large: 1440px;
 @media (min-width: $breakpoint-large) {
   .projects {
     height: 783px;
-    // grid-template-columns: repeat(2, 250px);
     &__tabWrapper {
       height: 100px;
       width: 430px;
@@ -130,7 +130,6 @@ $breakpoint-large: 1440px;
       .card {
         display: flex;
         flex-direction: column;
-        // width: 360px;
         width: 100%;
         height: 310px;
         .imgCover {
@@ -155,6 +154,24 @@ $breakpoint-large: 1440px;
     .roomImg {
       width: 345px;
       height: 286px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .projects {
+    height: 750px;
+    .natureImg {
+      width: 567px;
+      height: 464px;
+      right: -120px;
+      top: 190px;
+    }
+    .roomImg {
+      width: 627px;
+      height: 414px;
+      bottom: 130px;
+      left: -120px;
     }
   }
 }
