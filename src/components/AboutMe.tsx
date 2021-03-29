@@ -4,9 +4,9 @@ import globeImg from "../images/about_me/globe.svg";
 import minionFrontImg from "../images/about_me/minion_front.svg";
 import minionBackImg from "../images/about_me/minion_back.svg";
 import blobsImg from "../images/about_me/blobsGroup.svg";
-// import phonesIpadImg from "../images/about_me/phones-ipad.svg";
 import blobsIpadImg from "../images/about_me/blobsGroup-ipad.svg";
 import phonesLargeImg from "../images/about_me/phones-large.svg";
+import TypeWriter from "typewriter-effect";
 
 function AboutMe() {
   return (
@@ -26,7 +26,22 @@ function AboutMe() {
       <div className="aboutMe__textWrapper">
         <div className="titleWrapper">
           <h1>Hi, I'm Fitri</h1>
-          <p>Software Developer + UI/UX Designer</p>
+          {/* <p>Software Developer + UI/UX Designer</p> */}
+          <p>
+            <TypeWriter
+              options={{
+                loop: true,
+                delay: 50,
+                deleteSpeed: 50,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Software Developer + UI/UX Designer")
+                  .pauseFor(2500)
+                  .start();
+              }}
+            />
+          </p>
           <hr />
         </div>
         <div className="description">
