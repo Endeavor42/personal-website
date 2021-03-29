@@ -256,5 +256,56 @@ $breakpoint-desktop: 1920px;
         font-size: 48px;
       }
     }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      .card:nth-child(4),
+      .card:nth-child(5) {
+        display: flex;
+        width: 681px;
+        height: 252px;
+        justify-content: space-between;
+        .imgCover {
+          height: auto;
+          img {
+            height: 100%;
+            width: 344px;
+          }
+        }
+        .cardCenter {
+          height: 100%;
+          padding: 0;
+        }
+        .cardContent {
+          width: 100%;
+        }
+      }
+      .card:nth-child(4) {
+      }
+      .card:nth-child(5) {
+        width: 780px;
+        .cardContent {
+          .techRow {
+            width: 75%;
+          }
+        }
+      }
+    }
+    .card {
+      margin: 5px;
+      // margin: 10px;
+      width: 526px;
+      height: 625px;
+      .imgCover {
+        height: 155px;
+      }
+      .cardCenter {
+        // height: calc(100% - 100px);
+      }
+      .cardContent {
+        height: 80%;
+      }
+    }
   }
 }

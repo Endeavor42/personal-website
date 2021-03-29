@@ -142,7 +142,7 @@ function Skills() {
                 </div>
                 <div className="techItem">
                   <img src={dockerImg} alt="Docker" />
-                  <p>CSS</p>
+                  <p>Docker</p>
                 </div>
               </div>
             </div>
