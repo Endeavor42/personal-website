@@ -181,7 +181,6 @@ $breakpoint-desktop: 1920px;
       }
     }
     &__cards {
-      // margin-left: 100px;
       margin-left: 7.5%;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 1fr 1fr;
@@ -224,6 +223,7 @@ $breakpoint-desktop: 1920px;
     &__jobTitleWrapper--first,
     &__jobTitleWrapper--second {
       align-items: flex-start;
+      margin-bottom: 5px;
     }
     &__dude {
       display: inline-block;
@@ -243,6 +243,30 @@ $breakpoint-desktop: 1920px;
     &__description--first {
       margin-left: 80px;
     }
-    // Increase the size of the bullet points
+    &__row2 {
+      display: flex;
+      align-items: center;
+    }
+    &__description--second {
+      ul {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      flex: 0.35;
+    }
+    &__cards {
+      height: 529px;
+      margin-left: 0;
+      // margin-top: 50px;
+      transform: translateY(43px);
+      flex: 0.65;
+      background-image: url("../images/experience/room2.svg");
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .card {
+        // grid-column: 2/3;
+        margin: 0 0 0 70px;
+      }
+    }
   }
 }

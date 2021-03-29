@@ -8,14 +8,18 @@ import dudeImg from "../images/experience/dude.svg";
 function Experience() {
   return (
     <div className="experience">
+      {/* Tab */}
       <div className="experience__tabWrapper">
         <p>Experience</p>
       </div>
       <div className="experience__container">
+        {/* First job experience */}
         <div className="experience__row1">
+          {/* Image */}
           <div className="experience__dude">
             <img src={dudeImg} alt="Dude" />
           </div>
+          {/* Description */}
           <div className="experience__description--first">
             <div className="experience__jobTitleWrapper--first">
               <div className="companyAndTimeline">
@@ -54,60 +58,63 @@ function Experience() {
             </ul>
           </div>
         </div>
-        <div className="experience__description--second">
-          <div className="experience__jobTitleWrapper--second">
-            <div className="companyAndTimeline">
-              <h3>Sensor Dynamix</h3>
-              <p className="timeline">May 2020 - August 2020</p>
+        {/* Second job experience */}
+        <div className="experience__row2">
+          <div className="experience__description--second">
+            <div className="experience__jobTitleWrapper--second">
+              <div className="companyAndTimeline">
+                <h3>Sensor Dynamix</h3>
+                <p className="timeline">May 2020 - August 2020</p>
+              </div>
+              <p className="jobPosition">
+                React Native developer and UI/UX Designer Intern
+              </p>
             </div>
-            <p className="jobPosition">
-              React Native developer and UI/UX Designer Intern
-            </p>
+            <ul>
+              <li>
+                Implemented Context API to reduce the number of requests made to
+                the database by 87%-93%
+              </li>
+              <li>
+                Developed a login page with React Native and validated user
+                inputs with RegEx
+              </li>
+              <li>
+                Set up Stripe to securely accept online payments, manage
+                customer activities, and handle recurring subscriptions
+              </li>
+              <li>
+                Used OAuth and Firebase Authentication to allow users to sign in
+                with their Google account
+              </li>
+              <li>
+                Responsible for designing both mobile app and website using
+                Adobe XD
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              Implemented Context API to reduce the number of requests made to
-              the database by 87%-93%
-            </li>
-            <li>
-              Developed a login page with React Native and validated user inputs
-              with RegEx
-            </li>
-            <li>
-              Set up Stripe to securely accept online payments, manage customer
-              activities, and handle recurring subscriptions
-            </li>
-            <li>
-              Used OAuth and Firebase Authentication to allow users to sign in
-              with their Google account
-            </li>
-            <li>
-              Responsible for designing both mobile app and website using Adobe
-              XD
-            </li>
-          </ul>
-        </div>
-        <div className="experience__cards">
-          <Card className="card">
-            <CardMedia className="imgCover">
-              <img src={mobileMockupImg} alt="Mobile Mockup" />
-            </CardMedia>
-            <CardActions className="cardFooter">
-              <p>Mobile Mockup</p>
-            </CardActions>
-          </Card>
-          <Card className="card">
-            <CardMedia className="imgCover">
-              <img
-                className="second"
-                src={websiteMockupImg}
-                alt="Website Mockup"
-              />
-            </CardMedia>
-            <CardActions className="cardFooter">
-              <p>Website Mockup</p>
-            </CardActions>
-          </Card>
+          <div className="experience__cards">
+            <Card className="card">
+              <CardMedia className="imgCover">
+                <img src={mobileMockupImg} alt="Mobile Mockup" />
+              </CardMedia>
+              <CardActions className="cardFooter">
+                <p>Mobile Mockup</p>
+              </CardActions>
+            </Card>
+            <Card className="card">
+              <CardMedia className="imgCover">
+                <img
+                  className="second"
+                  src={websiteMockupImg}
+                  alt="Website Mockup"
+                />
+              </CardMedia>
+              <CardActions className="cardFooter">
+                <p>Website Mockup</p>
+              </CardActions>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
