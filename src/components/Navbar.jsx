@@ -8,7 +8,7 @@ function Navbar() {
   const [active, setActive] = useState("About me");
 
   const handleSetActive = (e) => {
-    setActive(e.target.innerText);
+    if (e.target.innerText !== "") setActive(e.target.innerText);
   };
 
   return (
@@ -41,7 +41,7 @@ function Navbar() {
               }
               className="tagsWrapper"
             >
-              <div className="item tag1"></div>
+              <div className="item tag1" />
               <div className="item tag2" />
               <div className="item tag3" />
             </div>
