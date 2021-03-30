@@ -94,26 +94,39 @@ function Experience() {
             </ul>
           </div>
           <div className="experience__cards">
-            <Card className="card">
-              <CardMedia className="imgCover">
-                <img src={mobileMockupImg} alt="Mobile Mockup" />
-              </CardMedia>
-              <CardActions className="cardFooter">
-                <p>Mobile Mockup</p>
-              </CardActions>
-            </Card>
-            <Card className="card">
-              <CardMedia className="imgCover">
-                <img
-                  className="second"
-                  src={websiteMockupImg}
-                  alt="Website Mockup"
-                />
-              </CardMedia>
-              <CardActions className="cardFooter">
-                <p>Website Mockup</p>
-              </CardActions>
-            </Card>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://xd.adobe.com/view/6c6b2732-ee16-4dfb-aff8-026d25231d2f-3938/
+"
+            >
+              <Card className="card">
+                <CardMedia className="imgCover">
+                  <img src={mobileMockupImg} alt="Mobile Mockup" />
+                </CardMedia>
+                <CardActions className="cardFooter">
+                  <p>Mobile Mockup</p>
+                </CardActions>
+              </Card>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://xd.adobe.com/view/4061448c-8e8b-4352-8657-0d6573552a15-1532/"
+            >
+              <Card className="card">
+                <CardMedia className="imgCover">
+                  <img
+                    className="second"
+                    src={websiteMockupImg}
+                    alt="Website Mockup"
+                  />
+                </CardMedia>
+                <CardActions className="cardFooter">
+                  <p>Website Mockup</p>
+                </CardActions>
+              </Card>
+            </a>
           </div>
         </div>
       </div>
