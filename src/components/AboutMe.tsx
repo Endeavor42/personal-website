@@ -10,7 +10,7 @@ import TypeWriter from "typewriter-effect";
 
 function AboutMe() {
   return (
-    <div className="aboutMe">
+    <div className="aboutMe" id="aboutMe">
       <div className="aboutMe__topImgContainer">
         <img className="phonesImg" src={phonesImg} alt="Phones" />
         <img className="phonesIpadImg" src={phonesLargeImg} alt="Phones" />

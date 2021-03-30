@@ -5,7 +5,7 @@ import { Card, CardActions, CardMedia } from "@material-ui/core";
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="projects__tabWrapper">
         <p>Projects</p>
       </div>

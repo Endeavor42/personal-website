@@ -7,7 +7,7 @@ import dudeImg from "../images/experience/dude.svg";
 
 function Experience() {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       {/* Tab */}
       <div className="experience__tabWrapper">
         <p>Experience</p>

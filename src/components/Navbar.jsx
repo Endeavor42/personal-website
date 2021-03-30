@@ -2,29 +2,40 @@ import { useState } from "react";
 import "../styles/navbar.scss";
 import hamburgerIcon from "../images/navbar/hamburger.svg";
 import downloadImg from "../images/navbar/download.svg";
+import { Link } from "react-scroll";
 
 function Navbar() {
-  const [linkState, setLinkState] = useState("about me");
+  const [active, setActive] = useState("About me");
+
+  const handleSetActive = (e) => {
+    setActive(e.target.innerText);
+  };
 
   return (
     <div className="navbar">
       <div className="navbar__container">
         <ul className="navbar__links">
-          <li onClick={() => setLinkState("about me")}>
-            {
-              <p
-                style={
-                  linkState === "about me"
-                    ? { color: "white", textDecoration: "none" }
-                    : { color: "black" }
-                }
-              >
-                About me
-              </p>
-            }
+          <Link
+            activeClass="active"
+            to="aboutMe"
+            spy={true}
+            duration={500}
+            smooth={true}
+            offset={-100}
+            onClick={handleSetActive}
+          >
+            <p
+              style={
+                active === "About me"
+                  ? { color: "white", textDecoration: "none" }
+                  : { color: "black" }
+              }
+            >
+              About me
+            </p>
             <div
               style={
-                linkState === "about me"
+                active === "About me"
                   ? { visibility: "visible" }
                   : { visibility: "hidden" }
               }
@@ -34,11 +45,19 @@ function Navbar() {
               <div className="item tag2" />
               <div className="item tag3" />
             </div>
-          </li>
-          <li onClick={() => setLinkState("experience")}>
+          </Link>
+          <Link
+            activeClass="active"
+            to="experience"
+            spy={true}
+            duration={500}
+            smooth={true}
+            onClick={handleSetActive}
+            offset={-100}
+          >
             <p
               style={
-                linkState === "experience"
+                active === "Experience"
                   ? { color: "white", textDecoration: "none" }
                   : { color: "black" }
               }
@@ -47,7 +66,7 @@ function Navbar() {
             </p>
             <div
               style={
-                linkState === "experience"
+                active === "Experience"
                   ? { visibility: "visible" }
                   : { visibility: "hidden" }
               }
@@ -57,11 +76,19 @@ function Navbar() {
               <div className="item tag2" />
               <div className="item tag3" />
             </div>
-          </li>
-          <li onClick={() => setLinkState("skills")}>
+          </Link>
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            duration={500}
+            smooth={true}
+            onClick={handleSetActive}
+            offset={-75}
+          >
             <p
               style={
-                linkState === "skills"
+                active === "Skills"
                   ? { color: "white", textDecoration: "none" }
                   : { color: "black" }
               }
@@ -70,7 +97,7 @@ function Navbar() {
             </p>
             <div
               style={
-                linkState === "skills"
+                active === "Skills"
                   ? { visibility: "visible" }
                   : { visibility: "hidden" }
               }
@@ -80,11 +107,19 @@ function Navbar() {
               <div className="item tag2" />
               <div className="item tag3" />
             </div>
-          </li>
-          <li onClick={() => setLinkState("projects")}>
+          </Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            duration={500}
+            smooth={true}
+            onClick={handleSetActive}
+            offset={-125}
+          >
             <p
               style={
-                linkState === "projects"
+                active === "Projects"
                   ? { color: "white", textDecoration: "none" }
                   : { color: "black" }
               }
@@ -93,7 +128,7 @@ function Navbar() {
             </p>
             <div
               style={
-                linkState === "projects"
+                active === "Projects"
                   ? { visibility: "visible", textDecoration: "none" }
                   : { visibility: "hidden" }
               }
@@ -103,7 +138,7 @@ function Navbar() {
               <div className="item tag2" />
               <div className="item tag3" />
             </div>
-          </li>
+          </Link>
         </ul>
         <img src={hamburgerIcon} alt="Hamburger Icon" />
         <a href="../Fitri_Rozi_Resume.pdf" download>

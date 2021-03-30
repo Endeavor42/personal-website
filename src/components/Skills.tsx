@@ -43,7 +43,7 @@ import stripeImg from "../images/skills/cloudCard/stripe.svg";
 
 function Skills() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="skills__tabWrapper">
         <p>Skills</p>
       </div>
