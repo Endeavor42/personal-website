@@ -141,7 +141,7 @@ function Navbar() {
           </Link>
         </ul>
         <img src={hamburgerIcon} alt="Hamburger Icon" />
-        <a href="../Fitri_Rozi_Resume.pdf" download>
+        <a href="/Fitri_Rozi_Resume.pdf" download>
           <img src={downloadImg} alt="Download resume" />
           <span>Resume</span>
         </a>
