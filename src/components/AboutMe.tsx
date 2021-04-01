@@ -39,14 +39,12 @@ function AboutMe() {
       delay: 0.3,
     });
     gsap.from(".minion--front", {
-      y: 170,
-      delay: 0.5,
+      y: 20,
       duration: 1,
       ease: "bounce(0.1)",
     });
     gsap.from(".minion--back", {
-      y: 170,
-      delay: 0.6,
+      y: 20,
       duration: 1,
       ease: "bounce(0.1)",
     });
