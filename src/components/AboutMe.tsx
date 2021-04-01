@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import TypeWriter from "typewriter-effect";
+import gsap from "gsap";
+
 import "../styles/aboutMe.scss";
 import phonesImg from "../images/about_me/phones.svg";
 import globeImg from "../images/about_me/globe.svg";
@@ -6,9 +10,48 @@ import minionBackImg from "../images/about_me/minion_back.svg";
 import blobsImg from "../images/about_me/blobsGroup.svg";
 import blobsIpadImg from "../images/about_me/blobsGroup-ipad.svg";
 import phonesLargeImg from "../images/about_me/phones-large.svg";
-import TypeWriter from "typewriter-effect";
 
 function AboutMe() {
+  useEffect(() => {
+    gsap.from(".aboutMe__textWrapper", {
+      y: -80,
+      opacity: 0.4,
+      duration: 1,
+    });
+    gsap.from("hr", {
+      opacity: 0,
+      duration: 0.5,
+      delay: 0.4,
+      width: 0,
+    });
+    gsap.from(".phonesIpadImg", {
+      x: -125,
+      duration: 1.5,
+      opacity: 0,
+      ease: "power3.out",
+      delay: 0.3,
+    });
+    gsap.from(".blobsIpadImg", {
+      x: 125,
+      duration: 1.5,
+      opacity: 0,
+      ease: "power3.out",
+      delay: 0.3,
+    });
+    gsap.from(".minion--front", {
+      y: 170,
+      delay: 0.5,
+      duration: 1,
+      ease: "bounce(0.1)",
+    });
+    gsap.from(".minion--back", {
+      y: 170,
+      delay: 0.6,
+      duration: 1,
+      ease: "bounce(0.1)",
+    });
+  }, []);
+
   return (
     <div className="aboutMe" id="aboutMe">
       <div className="aboutMe__topImgContainer">
@@ -36,6 +79,7 @@ function AboutMe() {
               }}
               onInit={(typewriter) => {
                 typewriter
+                  .pauseFor(100)
                   .typeString("Software Developer + UI/UX Designer")
                   .pauseFor(2500)
                   .start();
