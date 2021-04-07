@@ -88,8 +88,8 @@ function Experience() {
                 with their Google account
               </li>
               <li>
-                Responsible for designing both mobile app and website using
-                Adobe XD
+                Responsible for designing both mobile app and website with 200+
+                artboards using Adobe XD
               </li>
             </ul>
           </div>

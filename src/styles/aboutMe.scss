@@ -166,6 +166,8 @@ $breakpoint-desktop: 1920px;
     width: 400px;
   }
   .phonesIpadImg {
+    // NOTES:
+    transform: translate(50px, 0px);
     display: block;
     height: 70%;
   }
@@ -225,7 +227,9 @@ $breakpoint-desktop: 1920px;
       display: grid;
       margin: 0;
       .phonesIpadImg {
-        transform: translate(50px, 80px);
+        // NOTES:
+        transform: translate(50px, 0px);
+        margin-top: 80px;
         height: 500px;
       }
       .rightImg {
@@ -258,7 +262,6 @@ $breakpoint-desktop: 1920px;
       height: 80px;
     }
     &__minionsContainer {
-      // width: 20%;
       margin-top: 35px;
     }
   }
