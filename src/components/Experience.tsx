@@ -28,7 +28,7 @@ function Experience() {
                   September 2020 - Present
                 </p>
               </div>
-              <p className="jobPosition">React and Django Developer Intern</p>
+              <p className="jobPosition">Full Stack Developer Intern</p>
             </div>
             <ul>
               <li>
@@ -67,7 +67,7 @@ function Experience() {
                 <p className="timeline">May 2020 - August 2020</p>
               </div>
               <p className="jobPosition">
-                React Native developer and UI/UX Designer Intern
+                Software Engineer & UI/UX Designer Intern
               </p>
             </div>
             <ul>
